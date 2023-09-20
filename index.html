@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@400;700&display=swap">
+
+<script src="script.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NX Environmental Technologies</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@400;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll('img').forEach(function(img){
+                img.oncontextmenu = function(event) {
+                    event.preventDefault();
+                    alert("Right-click is disabled!");
+                };
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <img src="Images/NXET Logo Full v4.png" alt="NXET Logo" id="logo">
+    </header>
+
+    <section class="intro-section">
+        <!-- Content of the first section here. For example: -->
+        <h1></h1>
+    </section>
+
+    <section class="about-section">
+        <h2>About NX Environmental Technologies</h2>
+
+        <p>
+           Operating as a partnership from our unique research activities based on our homegrown ideas, we are developing the state-of-the-art environmental technologies. 
+           We also proudly offer our discoveries for commercial and licensing opportunities, bridging the gap between homegrown innovation and practical application.
+        </p>
+            
+        <p>
+           No matter you're an academic/industrial researcher looking for collaboration, an entrepreneur searching for the next revolutionary product, or an investor seeking to investing environmental technologies, we are happy to hear your specific needs.
+           Moreover, we provide insightful consultations, sharing our wealth of knowledge relating to utilisation of our technologies with those keen to make impactful contribution in the environmental sector.
+        </p>
+            
+        <p>
+            Join us on our journey to reshape a sustainable world.
+        </p>
+    </section>
+
+    <section class="team-section">
+        <div class="team-left">
+            <h2>Ning Zhang</h2>
+            <img src="Images/Team NZ Profile.png" alt="Ning Zhang" class="profile-pic">
+            <h3>Partner</h3>
+            <p>
+                Dr Ning Zhang has extensive resarch experience in chemical and environment engineering with extensive research experience in carbon capture utilisation and storage. 
+            </p>
+            <!-- Content for the left part of the team section here -->
+        </div>
+        <div class="team-right">
+            <h2>Xiao Han</h2>
+            <img src="Images/Team XH Profile.png" alt="Xiao Han" class="profile-pic">
+            <h3>Partner</h3>
+            <p>
+                Dr Xiao Han is a serial inventor, has extensive innovation and resarch experience in material science and engineering with expertise in inorganic nanomaterials and sol-gel chemistry.
+            </p>
+        <!-- Add any more details or perhaps an image if required -->
+        </div>
+    </section>
+
+    <section class="video-section">
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>    
+
+    <!-- Other sections or content of your page can follow -->
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 NX Environmental Technologies. All rights reserved.</p>
+            <!-- You can add more elements here like social media icons, other links, etc. -->
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+    font-family: 'Noto Sans Myanmar', sans-serif;
+    background: url('') no-repeat center center fixed;
+    background-size: cover;
+    padding-top: 0; /* This value should be approximately the height of your header, so adjust accordingly */
+    /* ... other styles ... */
+    
+}
+
+header {
+    height: 50px;  /* Example height, adjust as needed */
+    /* ... other styles ... */
+    display: flex;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(255, 255, 255, 0.6); /* White with 0.3 (30%) opacity (which means 70% transparent) */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* This ensures the header spans the full width of the viewport */
+    z-index: 1000; /* This value should be high enough to ensure the header is always on top of other elements */
+    justify-content: center; /* Added this line to center the logo */
+}
+
+#logo {
+    max-height: 190%;  /* Adjust this value as needed. 70% means the logo's height will be 70% of the header's height */
+    width: auto;      /* This ensures the logo maintains its aspect ratio */
+    display: block;   /* Removes any extra spacing that might come from inline display */
+}
+
+.intro-section {
+    background: url('Images/Homepage\ cover\ light\ 2.jpg') no-repeat center center;
+    background-size: cover;  /* This ensures the image covers the full section */
+    height: 500px;  /* Example height, adjust based on your needs */
+    color: #ffffff;  /* Example text color, adjust based on your image for better visibility */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  /* The above 3 lines ensure the content inside the section is centered */
+    padding: 20px;  /* Space for content inside the section */
+}
+
+.intro-section h1 {
+    font-size: 32px;
+    margin-bottom: 0px;
+    transform: translateY(0px); /* Adjust this value as needed */
+}
+.intro-section p {
+    margin-top: 0px;
+    transform: translateY(0px); /* Adjust this value as needed */
+}
+
+.about-section {
+    padding: 40px 20px;  /* Adjust as needed for desired spacing */
+    background-color: #f4f4f4;
+    text-align: Lef; /* This will center-align all text inside the about-section */
+}
+
+.about-section h2 {
+    font-size: 20px;
+    margin-bottom: 20px; /* Space below the h2 heading */
+    text-align: center;
+    color: #909090;
+    /* ... other styles if needed ... */
+}
+
+.about-section p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 12px;
+    max-width: 800px; /* adjust this value depending on how wide you want your paragraph to be */
+    color: #616161;
+}
+
+.team-section {
+    display: flex;
+    justify-content: center; /* horizontally centers the child elements */
+    align-items: center;     /* vertically centers the child elements */
+    flex-wrap: wrap;         /* allows the child elements to wrap to the next line if there's not enough space side by side */
+    gap: 10px;               /* creates a gap between team-left and team-right */
+}
+
+.team-left, .team-right {
+    width: 35%;  /* you can adjust this value as needed */
+    text-align: center;  /* center the content inside each div */
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Aligns content to the top */
+    align-items: center; /* Centers content horizontally */
+}
+
+.team-left h2::first-letter, .team-right h2::first-letter {
+    font-size: 200%;  /* Adjust this value to achieve the desired size */
+    float: center;  /* This makes sure the larger initial letter flows nicely with the rest of the text */
+    margin-bottom: -0.1em;  /* Adjust this value to align the bottom of the initial letter to the bottom of the rest of the text */
+}
+
+/* Optional: Add specific styles for each section if needed */
+.team-left h2 {
+    color: #58A776;
+    /* Any specific styles for the left part here */
+}
+
+.team-right h2 {
+    color: #519CC2;
+    /* Any specific styles for the right part here */
+}
+
+.team-left h3, .team-right h3 {
+    color: #909090;
+}
+
+.team-left p, .team-right p {
+    color: #616161;
+}
+
+.profile-pic {
+    width: auto;  /* or whatever size you prefer */
+    height: 120px;
+    border-radius: 0%;  /* this makes the image round, remove if you prefer a square image */
+    margin: 10px 0;  /* adds some space above and below the image */
+    object-fit: cover;  /* ensures the image covers the entire space without distortion */
+}
+
+
+.video-section {
+    background-color: #f4f4f4; /* Just an example color, you can change it */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 896px;  /* This is the maximum width you want the video to stretch to. It can be adjusted */
+    margin: 20px auto;
+    padding-bottom: 56.25%; /* This percentage gives the 16:9 aspect ratio for widescreen videos. Adjust if your video has a different aspect ratio */
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+footer {
+    background-color: #333;  /* Dark background for visibility, you can change as per your preference */
+    color: #ffffff;  /* White text color */
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+/* Mobile styles */
+@media (max-width: 768px) {  /* You can adjust this breakpoint as needed */
+
+    header {
+        /* Other properties you might want to adjust for mobile */
+        padding: 10px;
+    }
+    
+    /* Sample: Adjust header logo size */
+    #logo {
+        max-height: 120%;  /* Or whatever size you deem appropriate */
+        margin: auto;
+        display: block;
+
+    }
+    
+    /* Adjust team section layout for mobile */
+    .team-left, .team-right {
+        width: 100%; /* Makes them stack on top of each other on smaller screens */
+        margin: 0 auto; /* Centers the content */
+    }
+
+    /* Adjust video size */
+    .video-container iframe {
+        width: 100%;
+        height: auto;
+    }
+    
+    /* Add more styles or adjust existing ones for mobile */
+}
+
+
+
+
+
+
+
