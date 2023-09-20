@@ -1,1 +1,1 @@
-© NX Environmental Technologies, Dr Xiao Han and Dr Ning Zhang.
+© 2023 NX Environmental Technologies, All rights reserved.
