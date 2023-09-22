@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: 'Noto Sans Myanmar', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     background: url('') no-repeat center center fixed;
     background-size: cover;
     padding-top: 0; /* This value should be approximately the height of your header, so adjust accordingly */
