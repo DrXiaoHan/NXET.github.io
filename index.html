@@ -1,10 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap">
-
-<script src="js/script.js"></script>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +7,11 @@
     <link rel="icon" type="image/png" href="images/NXETicon.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap">
     <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="css/script.js" defer></script>
+
+
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             document.querySelectorAll('img').forEach(function(img){
@@ -23,14 +23,12 @@
         });
     </script>
 </head>
-
 <body>
     <header>
         <img src="images/NXET Logo Full v4.png" alt="NXET Logo" id="logo">
     </header>
 
     <section class="intro-section">
-        <!-- Content of the first section here. For example: -->
         <h1></h1>
     </section>
 
@@ -73,11 +71,28 @@
         </div>
     </section>
 
+    <section class="photo-section">
+        <h2>Homegrown Projects</h2>
+        <!-- Swiper -->
+        <div class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <div class="carousel">
+              <img src="images/project_2Dec.png" alt="img" draggable="false">
+              <img src="images/project_MAST.png" alt="img" draggable="false">
+              <img src="images/project_CG.png" alt="img" draggable="false">
+              <img src="images/project_RCA.png" alt="img" draggable="false">
+              <!-- ... more slides ... -->
+            </div>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+
+    </section>
+
     <section class="video-section">
         <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/iiOU-ETxN2Y?si=rEf3xmwhDneUuUSO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-    </section>    
+    </section> 
 
     <!-- Other sections or content of your page can follow -->
 
@@ -88,5 +103,7 @@
         </div>
     </footer>
     
+    <script src="js/script.js"></script>
+
 </body>
 </html>
