@@ -58,7 +58,7 @@ header {
 }
 
 .about-section h2 {
-    font-size: 20px;
+    font-size: 32px;
     margin-bottom: 20px; /* Space below the h2 heading */
     text-align: center;
     color: #909090;
@@ -131,7 +131,7 @@ header {
 }
 
 .photo-section h2 {
-    font-size: 20px;
+    font-size: 32px;
     margin-top: 80px;  /* Space above the h2 heading */
     margin-bottom: 20px; /* Space below the h2 heading */
     text-align: center;
@@ -323,4 +323,10 @@ footer {
       width: 100%;
     }
 }
+
+
+
+
+
+
 
